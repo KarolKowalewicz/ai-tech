@@ -1,0 +1,26 @@
+body {
+  background: cream;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid yellow;
+  background: orange;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.block .more {
+  display: none;
+}
+
+.block.aktywna .more {
+  display: block;
+}
