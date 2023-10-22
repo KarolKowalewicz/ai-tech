@@ -1,0 +1,3 @@
+align-items: center; /* Wyrównanie w pionie do środka */
+  justify-content: space-between; /* Dodajemy właściwość justify-content */
+  gap: 30px; 

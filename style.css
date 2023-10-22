@@ -76,6 +76,7 @@ td {
   --primary-color-text: #acacac;
   --primary-color-text-button: #fff;
   --primary-color-border: #6b009d;
+  --primary-color-frame: #3F1F55;
   --secondary-color-background: #181234;
   --secondary-color-light: #ff5733;
   --secondary-color-dark: #ff7000;
@@ -243,14 +244,21 @@ span {
   color: var(--primary-color-text-button);
 }
 
+p {
+  color: var(--primary-color-text-button);
+  font-size: 16px;
+  padding: 26px;
+}
+
 .container {
   background-color: var(--primary-color-dark);
   text-align: center;
+  padding-top: 72px;
 }
 
 .containerflow {
-   position: relative;
-  top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
+  position: relative;
+  top: -90px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
   padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
   border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
   background-color: var(--primary-color-dark);
@@ -262,6 +270,34 @@ span {
   padding-top: 22px;
   
 }
+.futter {
+  background-color: var(--primary-color-dark);
+  text-align: center;
+  padding-top: 72px;
+  color: var(--primary-color-text);
+}
+
+.futtermenu {
+  text-decoration: none;
+
+}
+
+.futtermenu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.futtermenu li a {
+  text-decoration: none;
+  color: var(--primary-color-text); /* Kolor linków */
+}
+
+.futtermenu li a.active {
+  position: relative;
+}
+
+
+
 
 .about {
   color: var(--secondary-color-dark);
@@ -269,26 +305,125 @@ span {
   justify-content: center;
 }
 .aboutus {
-  width: 736px;
-  display: block;
-  
-   background-image: url(./img/Ellipse2.png);
-   background-size:auto; 
-   background-repeat: no-repeat;
-   margin-left: 250px;
+  /* width: 736px; */
+  /* display: block; */
+ /* margin-left: 250px; */
 }
 
 .table {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.tablecenter {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.pole1 {
+   width: 100%;
+}
+
+    /* Styl dla dwóch pól obok siebie (kwadratowe) */
+.pole2, .pole3 {
+ border: #e5e5e5 2px;
+ width: 38%; /* Szerokość 48% dla obu pól, aby zmieściły się obok siebie */
+}
+
+.picture1 {
+ width: 120px;
+ display: flex;
+ background-image: url(./img/Ellipse2.png);
+ background-size: cover; /* background-size:auto oznacza, że obraz nie jest skalowany */
+ background-repeat: no-repeat;
+ max-width: 120px;
+ margin: 0 auto;
+ height: 240px; /* Ustaw wysokość, aby dopasować do szerokości i zachować proporcje obrazu */
+}
+
+.picture2 {
+  width: 120px;
   display: flex;
+  background-image: url(./img/girl-face.png);
+  background-size: cover; /* background-size:auto oznacza, że obraz nie jest skalowany */
+  background-repeat: no-repeat;
+  max-width: 120px;
+  margin: 0 auto;
+  z-index: 2;
+   height: 240px; /* Ustaw wysokość, aby dopasować do szerokości i zachować proporcje obrazu */
+}
+
+.content {
+  display: flex;
+  align-items: center; /* Wyśrodkowanie w pionie */
+}
+
+.pictures {
+  max-width: 50%; /* Obraz zajmuje 50% szerokości kontenera */
 
 }
+
+.text {
+  font-size: 16px;
+  flex: 1; /* Tekst zajmuje pozostałe 50% szerokości kontenera */
+  padding: 20px; /* Dodaj odpowiedni odstęp od obrazka */
+  text-align:justify;
+  width: 100%;
+}
+
+.tittle {
+  font-size: 20;
+
+}
+.tittlebig {
+font-size: 48px;
+
+}
+
 .welcome {
-  background-color: var(--secondary-color-background);
+  background-color: var(--primary-color-framed);
+}
+
+.frame {
+  background-color: var(--primary-color-frame);
+  display: block;
+  width: 200px;
+  height: 400px;
+  border: #ccc 2px;
+
 }
 
 .presentation {
   background-color: var(--third-color-background);
+  padding-bottom: 152px;
+  border-bottom: 1px solid #ccc; 
 }
+
+.places {
+    position: relative;
+    top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
+    padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
+    border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
+    background-color: var(--primary-color-dark);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--primary-color-text);
+    margin-left: 72px;
+    margin-right: 72px;
+    padding-top: 22px;
+    
+  
+}
+
+.place2 {
+ display: block;
+padding: 10px 80px 40px 80px;
+}
+
+.place3 {
+  padding: 20px 90px 50px 90px;
+}
+
 
 /* tables still need 'cellspacing="0"' in the markup */
 
