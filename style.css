@@ -73,8 +73,11 @@ td {
   --primary-color-background: #e5e5e5;
   --primary-color-text: #acacac;
   --primary-color-text-button: #fff;
+  --primary-color-border: #6b009d;
+  --secondary-color-background: #181234;
   --secondary-color-light: #ff5733;
   --secondary-color-dark: #ff7000;
+  --third-color-background: #0d0921;
   /* --secondary-color-dark: #EF09DA; */
 }
 
@@ -84,12 +87,19 @@ td {
   outline: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@font-face {
+  font-family: "coolveticaregular";
+  src: url("coolvetica_rg-webfont.woff2") format("woff2"),
+    url("coolvetica_rg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   max-width: 1440px; /* Maksymalna szerokość kontenera */
   margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
-   font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 20px;
   line-height: 1;
   color: rgba(255, 255, 255, 0, 9);
@@ -98,10 +108,6 @@ body {
   line-height: auto;
   background-color: var(--primary-color-background);
   /* overflow-x: hidden;  */
-}
-
-.container {
-  /* padding: 20px; Dodatkowy padding wewnątrz kontenera */
 }
 
 .banner {
@@ -115,8 +121,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .navbar {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -128,7 +132,6 @@ body {
   background-repeat: no-repeat; /* Opcjonalne: wyłącza powtarzanie tła */
   border-bottom: 1px solid #ccc; /* Dodaj szarą linię dolną */
 }
-
 
 .menu {
 }
@@ -172,22 +175,54 @@ body {
   background-repeat: no-repeat; /* Opcjonalne: wyłącza powtarzanie tła 
 } */
 
+.button {
+  color: var(--primary-color-text-button);
+  background-color: var(--secondary-color-dark);
+  text-decoration: none;
+  padding: 8px 22px;
+  margin-left: 22px;
+  border-radius: 15px;
+}
+
+.buttonBig {
+  padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
+  border: 2px solid var(--primary-color-border); /* Dodaj obramowanie 2 pikseli */
+  background-color: var(--secondary-color-dark);
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 /* Główny baner */
 
 header {
   color: var(--primary-color-text);
+  padding: 156px;
+}
+
+h2 {
+  font-family: "coolveticaregular", sans-serif;
+  color: var(--primary-color-text-button);
+  font-weight: bold;
   font-size: 72px;
   letter-spacing: 2%;
   line-height: 1.5;
-  padding: 156px  ;
+  padding-bottom: 69px; /* odsuwam buttona w dół */
+}
 
+h3 {
+  font-family: "coolveticaregular", sans-serif;
+  color: var(--primary-color-text-button);
+  font-size: 40px;
 }
 
 h4 {
+  font-size: 17px;
+}
+
+h5 {
   color: var(--secondary-color-dark);
   font-size: 14px;
 }
-
 
 /* logotypy na środku strony */
 .logos {
@@ -196,46 +231,43 @@ h4 {
   justify-content: space-between;
 }
 
-.button {
-  color: var(--primary-color-text-button);
-  background-color: var(--secondary-color-dark);
-  text-decoration: none;
-  /* text-align: center; */
-
-  padding: 8px 22px ;
-  margin-left: 22px;
-  border-radius: 15px;
-}
-
-/* a {
-  color: var(--primary-color-text);
-}
-
-a:hover {
-  color: var(--secondary-color-dark);
-} */
-
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: center;
   gap: 30px;
 }
 
 span {
   color: var(--primary-color-text-button);
 }
+
+.container {
+  background-color: var(--primary-color-dark);
+  text-align: center;
+
+  /* padding: 20px; Dodatkowy padding wewnątrz kontenera */
+}
+.about {
+  color: var(--secondary-color-dark);
+  font-size: 17px;
+}
+
+.welcome {
+  background-color: var(--secondary-color-background);
+}
+
+.presentation {
+  background-color: var(--third-color-background);
+}
+
 /* tables still need 'cellspacing="0"' in the markup */
 
-table {
+/* table {
   border-collapse: separate;
 
   border-spacing: 0;
-}
+} */
 
-caption,
+/* caption,
 th,
 td {
   text-align: left;
@@ -248,16 +280,16 @@ blockquote:after,
 q:before,
 q:after {
   content: "";
-}
+} */
 
-blockquote,
+/* blockquote,
 q {
   quotes: "" "";
-}
+} */
 
-body {
+/* body {
   text: white;
-}
+} */
 
 .title-article {
   width: 500px;
