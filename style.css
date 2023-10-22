@@ -57,21 +57,13 @@ tr,
 th,
 td {
   margin: 0;
-
   padding: 0;
-
   border: 0;
-
   outline: 0;
-
   font-weight: inherit;
-
   font-style: inherit;
-
   font-size: 100%;
-
   font-family: inherit;
-
   vertical-align: baseline;
 }
 
@@ -81,7 +73,6 @@ td {
   --primary-color-background: #e5e5e5;
   --secondary-color-light: #ff5733;
   --secondary-color-dark: #ff7000;
-  /* inne zmienne kolorów */
 }
 
 /* remember to define focus styles! */
