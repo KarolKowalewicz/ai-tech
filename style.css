@@ -1,3 +1,5 @@
+
+
 html,
 body,
 div,
@@ -213,6 +215,7 @@ h3 {
   font-family: "coolveticaregular", sans-serif;
   color: var(--primary-color-text-button);
   font-size: 40px;
+  padding: 25px;
 }
 
 h4 {
@@ -246,21 +249,39 @@ span {
 }
 
 .containerflow {
-    position: relative;
-    top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
+   position: relative;
+  top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
   padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
   border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
   background-color: var(--primary-color-dark);
-  border-radius: 50px;
+  border-radius: 15px;
   text-decoration: none;
-  color: var(--primary-color-text)
+  color: var(--primary-color-text);
+  margin-left: 72px;
+  margin-right: 72px;
+  padding-top: 22px;
+  
 }
 
 .about {
   color: var(--secondary-color-dark);
   font-size: 17px;
+  justify-content: center;
+}
+.aboutus {
+  width: 736px;
+  display: block;
+  
+   background-image: url(./img/Ellipse2.png);
+   background-size:auto; 
+   background-repeat: no-repeat;
+   margin-left: 250px;
 }
 
+.table {
+  display: flex;
+
+}
 .welcome {
   background-color: var(--secondary-color-background);
 }
