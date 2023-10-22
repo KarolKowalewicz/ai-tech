@@ -243,9 +243,19 @@ span {
 .container {
   background-color: var(--primary-color-dark);
   text-align: center;
-
-  /* padding: 20px; Dodatkowy padding wewnątrz kontenera */
 }
+
+.containerflow {
+    position: relative;
+    top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
+  padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
+  border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
+  background-color: var(--primary-color-dark);
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--primary-color-text)
+}
+
 .about {
   color: var(--secondary-color-dark);
   font-size: 17px;
