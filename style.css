@@ -71,8 +71,11 @@ td {
   --primary-color-light: #4a56e2;
   --primary-color-dark: #06071b;
   --primary-color-background: #e5e5e5;
+  --primary-color-text: #acacac;
+  --primary-color-text-button: #fff;
   --secondary-color-light: #ff5733;
   --secondary-color-dark: #ff7000;
+  /* --secondary-color-dark: #EF09DA; */
 }
 
 /* remember to define focus styles! */
@@ -81,59 +84,136 @@ td {
   outline: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
+  max-width: 1440px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
+   font-family: 'Inter', sans-serif;
+  margin-top: 20px;
   line-height: 1;
   color: rgba(255, 255, 255, 0, 9);
   background: var(--primary-color-dark);
   font-size: 16px;
   line-height: auto;
-  background-color: var(--primary-color-background) 
+  background-color: var(--primary-color-background);
   /* overflow-x: hidden;  */
 }
 
 .container {
-  max-width: 1440px; /* Maksymalna szerokość kontenera */
-  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
-   padding: 20px; /* Dodatkowy padding wewnątrz kontenera */
+  /* padding: 20px; Dodatkowy padding wewnątrz kontenera */
 }
 
 .banner {
-  background-image: url(./img/robot-banner.jpg);
+  background-image: linear-gradient(rgba(6, 7, 27, 1), rgba(255, 255, 255, 0.1)),
+    url(./img/robot-banner.jpg);
+  /* background-image: url(./img/robot-banner.jpg); */
   background-size: cover; /* Opcjonalne: dostosowuje rozmiar obrazu do elementu */
   background-repeat: no-repeat; /* Opcjonalne: wyłącza powtarzanie tła */
-   height: 80vh;
-     max-width: 1440px; /* Ogranicz szerokość do 1440 pikseli */
+  height: 80vh;
+  max-width: 1440px; /* Ogranicz szerokość do 1440 pikseli */
   margin: 0 auto;
 }
 
+
+
 .navbar {
   display: grid;
-  grid-template-columns: repeat(4, auto); /* 4 kolumny o szerokości zawartości */
+  grid-template-columns: repeat(3, auto);
   align-items: center; /* Wyrównanie w pionie do środka */
+  justify-content: space-between; /* Dodajemy właściwość justify-content */
   gap: 30px; /* Odstęp między elementami */
-
-  
+  padding: 20px 120px 20px 120px;
   background-size: cover; /* Opcjonalne: dostosowuje rozmiar obrazu do elementu */
   background-repeat: no-repeat; /* Opcjonalne: wyłącza powtarzanie tła */
+  border-bottom: 1px solid #ccc; /* Dodaj szarą linię dolną */
 }
-.logos {
 
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-between;
+
+.menu {
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--primary-color-text); /* Kolor linków */
+}
+
+.menu li a.active {
+  position: relative;
+}
+
+.menu li a.active::after {
+  content: "\00b7"; /* Kod kropki (w formacie Unicode) */
+  position: absolute;
+  bottom: -40px; /* Odległość kropki od tekstu */
+  left: 15px;
+  font-size: 60px; /* Rozmiar kropki */
+  color: var(--secondary-color-dark); /* Kolor kropki */
+}
+
+.word {
+  display: flex; /* Używamy modelu flexbox */
+  align-items: center; /* Wyśrodkowanie w pionie */
+}
+
+.word img {
+  margin-right: 5px; /* Odstęp między ikonką a tekstem */
+}
+
+/* nie wiem jak zrobić żeby ikonka kuli ziemskiej była jako tło */
+/* .word {
+  background-image: url(./img/earth.png);
+    background-size:contain;
+  background-repeat: no-repeat; /* Opcjonalne: wyłącza powtarzanie tła 
+} */
+
+/* Główny baner */
+
+header {
+  color: var(--primary-color-text);
+  font-size: 72px;
+  letter-spacing: 2%;
+  line-height: 1.5;
+  padding: 156px  ;
+
+}
+
+h4 {
+  color: var(--secondary-color-dark);
+  font-size: 14px;
+}
+
+
+/* logotypy na środku strony */
+.logos {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .button {
-  color: #fff;
+  color: var(--primary-color-text-button);
   background-color: var(--secondary-color-dark);
   text-decoration: none;
-  padding: 10px;
+  /* text-align: center; */
+
+  padding: 8px 22px ;
+  margin-left: 22px;
   border-radius: 15px;
 }
 
-a {
-  color: var(--secondary-color-dark);
+/* a {
+  color: var(--primary-color-text);
 }
+
+a:hover {
+  color: var(--secondary-color-dark);
+} */
 
 ul {
   list-style: none;
@@ -145,8 +225,7 @@ ul {
 }
 
 span {
-  color: red
-
+  color: var(--primary-color-text-button);
 }
 /* tables still need 'cellspacing="0"' in the markup */
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu {
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      .menu li a {
+        text-decoration: none;
+        color: #333; /* Kolor linków */
+      }
+
+      .menu li a.active {
+        position: relative;
+      }
+
+      .menu li a.active::after {
+        content: "\00b7"; /* Kod kropki (w formacie Unicode) */
+        position: absolute;
+        bottom: -5px; /* Odległość kropki od tekstu */
+        left: 0;
+        font-size: 20px; /* Rozmiar kropki */
+        color: #f00; /* Kolor kropki */
+      }
+    </style>
+  </head>
+  <body>
+        <ul class="menu">
+          <li><a href="index.html"  class="active">Home</a></li>
+          <li><a href="#">Updates</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+  </body>
+</html>
