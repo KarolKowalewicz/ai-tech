@@ -17,6 +17,8 @@ menuLinks.forEach((link) => {
 
 
 
+
+
 // // Pobieramy element z opisem
 // const textElement = document.getElementById("description");
 
