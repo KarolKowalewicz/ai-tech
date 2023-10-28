@@ -323,7 +323,7 @@ p {
     /* Styl dla dwóch pól obok siebie (kwadratowe) */
 .containerAi {
   display: flex;
-  max-width: 1440px; /* Ustaw szerokość głównej sekcji na 1440px */
+  max-width: 1440px; /*  szerokość głównej sekcji  */
   margin: 0 auto;
   padding: 20px;
  }
@@ -337,7 +337,7 @@ p {
   position: relative;
   text-align: left;
   margin-left: 40px;
-  max-width: 40%; /* Obie pola mają 50% szerokości głównej sekcji  dupa to nie*/
+  max-width: 40%; /* Obie pola mają 50% szerokości głównej sekcji   tylko w teorii */
 }
 .pole2, .pole3, h4 {
   padding-left: 30px;
@@ -384,41 +384,41 @@ p {
  width: 120px;
  display: flex;
  background-image: url(./img/Ellipse2.png);
- background-size: cover; /* background-size:auto oznacza, że obraz nie jest skalowany */
+ background-size: cover;
  background-repeat: no-repeat;
  max-width: 120px;
  margin: 0 auto;
- height: 240px; /* Ustaw wysokość, aby dopasować do szerokości i zachować proporcje obrazu */
- 
+ height: 240px; 
+
 }
 
 .picture2 {
   width: 120px;
   display: flex;
   background-image: url(./img/girl-face.png);
-  background-size: cover; /* background-size:auto oznacza, że obraz nie jest skalowany */
+  background-size: cover; 
   background-repeat: no-repeat;
   max-width: 120px;
   margin: 0 auto;
   position: relative;
   z-index: 4;
    height: 240px; /* Ustaw wysokość, aby dopasować do szerokości i zachować proporcje obrazu */
+
 }
 
 .content {
   display: flex;
-  align-items: center; /* Wyśrodkowanie w pionie */
+  align-items: center; 
 }
 
 .pictures {
-  max-width: 50%; /* Obraz zajmuje 50% szerokości kontenera */
-
+  max-width: 50%; 
 }
 
 .text {
   font-size: 16px;
-  flex: 1; /* Tekst zajmuje pozostałe 50% szerokości kontenera */
-  padding: 20px; /* Dodaj odpowiedni odstęp od obrazka */
+  flex: 1; 
+  padding: 20px; 
   text-align:justify;
   width: 100%;
 }
@@ -453,7 +453,7 @@ font-size: 48px;
 
 .places {
     position: relative;
-    top: -10px; /* Ustaw na wartość, która podniesie element nad poprzednią sekcję */
+    top: -10px; 
     padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
     border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
     background-color: var(--primary-color-dark);
