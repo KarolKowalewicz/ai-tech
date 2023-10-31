@@ -389,6 +389,7 @@ p {
  max-width: 120px;
  margin: 0 auto;
  height: 240px; 
+
 }
 
 .picture2 {
@@ -399,8 +400,10 @@ p {
   background-repeat: no-repeat;
   max-width: 120px;
   margin: 0 auto;
-  z-index: 2;
-   height: 240px; 
+  position: relative;
+  z-index: 4;
+   height: 240px; /* Ustaw wysokość, aby dopasować do szerokości i zachować proporcje obrazu */
+
 }
 
 .content {
