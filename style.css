@@ -279,6 +279,9 @@ span {
 }
 
 .containerlogos {
+display: flex;
+align-items: stretch;
+
   padding: 13px 29px;
   text-decoration: none;
   margin-left: 72px;
@@ -514,6 +517,7 @@ h4 {
 .img-container {
     border: 2px solid var(--primary-color-text); 
     border-radius: 50% 50% 0 0;
+    height: 70%;
     overflow: hidden;
     text-align: center;
     padding: 10px;
