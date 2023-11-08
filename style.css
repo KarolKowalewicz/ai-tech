@@ -100,10 +100,11 @@ td {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1;
+  line-height: auto;
   color: rgba(255, 255, 255, 0.9);
   background: var(--primary-color-dark);
   font-size: 16px;
-  line-height: auto;
+ 
   background-color: var(--primary-color-background);
 }
 
@@ -650,17 +651,27 @@ text-align: center;
 }
 .newsettler {
 background: #0F0923;
+text-align: left;
 padding: 30px 40px;
 }
 
+.email {
+  background: var(--secondary-color-background);
+  border: 2px solid var(--primary-color-text);
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+}
 .mail-info {
-  text-align: left;
-  font-size: 12px;
+  margin-top: 16px;
+  color: var(--primary-color-background);
 width: 350px;
-padding: 25px;
-
+line-height: 1.5;
 }
 
+.subscribe {
+
+}
 .social {
 background: var(--primary-color-dark);
   padding-bottom: 92px;
@@ -670,3 +681,13 @@ background: var(--primary-color-dark);
   color: var(--primary-color-text);
  
 }
+
+.send-button {
+  position: absolute;
+padding: 18px;
+border: none;
+  background: var(--secondary-color-dark);
+    transform: translate(-100%, 15px);
+    /* border-radius: 10px; */
+    border-radius: 0 10px 10px 0;
+  }
