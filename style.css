@@ -658,6 +658,7 @@ padding: 30px 40px;
 .email {
   background: var(--secondary-color-background);
   border: 2px solid var(--primary-color-text);
+  width: 80%;
   margin-top: 16px;
   padding: 16px;
   border-radius: 10px;
@@ -670,7 +671,9 @@ line-height: 1.5;
 }
 
 .subscribe {
-
+color: var(--primary-color-text-button);
+font-weight: 700;
+font-size: 16px;
 }
 .social {
 background: var(--primary-color-dark);
@@ -687,7 +690,7 @@ background: var(--primary-color-dark);
 padding: 18px;
 border: none;
   background: var(--secondary-color-dark);
-    transform: translate(-100%, 15px);
+    transform: translate(-100%, 16px);
     /* border-radius: 10px; */
     border-radius: 0 10px 10px 0;
   }
