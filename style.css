@@ -663,6 +663,7 @@ padding: 30px 40px;
   padding: 16px;
   border-radius: 10px;
 }
+
 .mail-info {
   margin-top: 16px;
   color: var(--primary-color-background);
@@ -675,6 +676,7 @@ color: var(--primary-color-text-button);
 font-weight: 700;
 font-size: 16px;
 }
+
 .social {
 background: var(--primary-color-dark);
   padding-bottom: 92px;
