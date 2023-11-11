@@ -305,6 +305,8 @@ time {
   text-align: center;
   padding-top: 72px;
   color: var(--primary-color-text);
+  display: flex;
+  justify-content: space-between;
 }
 
 .futtermenu {
@@ -679,7 +681,7 @@ font-size: 16px;
 
 .social {
 background: var(--primary-color-dark);
-  padding-bottom: 92px;
+  padding: 30px 6% 100px 7%;
 }
 .social, a, a:hover, a:active, a.important {
   text-decoration: none;
