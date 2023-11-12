@@ -674,6 +674,8 @@ h4 {
 .container-social {
   background: var(--primary-color-dark);
   padding: 100px 200px 50px 200px;
+  display: flex; 
+   container: space-between;
 }
 
 .social, a, a:hover, a:active, a.important {
@@ -690,6 +692,3 @@ h4 {
   border-radius: 0 10px 10px 0;
 }
 
-.privacy, li {
-  color: var(--primary-color-text-button);
-}
