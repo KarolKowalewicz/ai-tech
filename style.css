@@ -338,7 +338,7 @@ time {
   position: relative;
   text-align: left;
   margin-left: 40px;
-  max-width: 40%; /* Obie pola mają 50% szerokości głównej sekcji   tylko w teorii */
+  max-width: 40%; 
 }
 .pole2,
 .pole3,
@@ -461,8 +461,8 @@ h4 {
 .places {
   position: relative;
   top: -10px;
-  padding: 13px 29px; /* Dostosuj wielkość paddingu do uzyskania odpowiedniego rozmiaru */
-  border: 2px solid var(--primary-color-text-button); /* Dodaj obramowanie 2 pikseli */
+  padding: 13px 29px; 
+  border: 2px solid var(--primary-color-text-button);
   background-color: var(--primary-color-dark);
   border-radius: 15px;
   text-decoration: none;
@@ -475,18 +475,6 @@ h4 {
 .place3 {
   padding: 20px 90px 50px 90px;
 }
-
-/* .box-container {
-  display: flex;
- justify-content: center;
-  padding: 25px;
-  width: 300px;
-  height: 240px;
- text-decoration: none;
-  margin-left: 72px;
-  margin-right: 72px;
- 
-} */
 
 .img-container {
   border: 2px solid var(--primary-color-text);
@@ -602,17 +590,12 @@ h4 {
   justify-content: center;
 }
 
-
-
-
 .container-footer {
   background-color: var(--primary-color-dark);
   text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 73px 15% 35px 15%;
-
-
 } 
 
 
@@ -622,9 +605,6 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
-
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
   gap: 10px;
 }
 
@@ -635,7 +615,6 @@ h4 {
   display: flex;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.5);
-  
 }
 
 .footer-menu-list span {
