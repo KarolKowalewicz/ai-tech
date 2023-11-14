@@ -609,7 +609,10 @@ h4 {
   background-color: var(--primary-color-dark);
   text-align: center;
   display: flex;
-  padding: 73px 100px 3px 15%;
+  justify-content: space-between;
+  padding: 73px 15% 35px 15%;
+
+
 } 
 
 
@@ -619,8 +622,9 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
   gap: 10px;
 }
 
@@ -629,8 +633,6 @@ h4 {
   list-style: none;
   margin: 0;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.5);
   
