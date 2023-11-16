@@ -578,6 +578,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  padding: 20px;
 }
 
 .question-active {
