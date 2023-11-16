@@ -296,6 +296,7 @@ time {
 }
 
 .containerlogos {
+  display: ;
   padding: 13px 29px;
   text-decoration: none;
   margin-left: 72px;
@@ -491,9 +492,11 @@ h4 {
 }
 
 .containerlogos2 {
+  display: flex;
   padding: 92px;
   margin: 0 auto;
   padding-top: 22px;
+  gap: 57px;
 }
 
 .box {
@@ -501,6 +504,7 @@ h4 {
   width: 343px;
   height: 500px;
   padding: 20px;
+  list-style: none;
 }
 
 .text-container {
