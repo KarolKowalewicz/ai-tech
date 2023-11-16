@@ -245,15 +245,19 @@ h5 {
 }
 
 .logos {
+  display: flex;
+  gap: 30px;
+  list-style: none;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
 }
 
-/* ul {
-  display: flex;
-  gap: 30px;
-} */
+ul {
+  /* list-style: none; */
+  /* display: flex; */
+  /* gap: 30px; */
+}
 
 /* li {
   display: inline;
