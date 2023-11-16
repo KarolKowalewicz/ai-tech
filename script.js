@@ -16,9 +16,6 @@ menuLinks.forEach((link) => {
 });
 
 
-
-
-
 // // Pobieramy element z opisem
 // const textElement = document.getElementById("description");
 
@@ -27,5 +24,16 @@ menuLinks.forEach((link) => {
 
 // // Aktualizujemy treść opisu
 // textElement.textContent = nevDescr;
+
+
+
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', (ev) => {
+  if (window.scrollY > 65) {
+    navbar.classList.remove('navbar--top');
+  } else {
+    navbar.classList.add('navbar--top');
+  }
+});
 
 
